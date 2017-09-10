@@ -1,0 +1,3 @@
+services:
+  get_streams.stream_generator:
+    class: Drupal\get_streams\GetStreamsService\GetStreams

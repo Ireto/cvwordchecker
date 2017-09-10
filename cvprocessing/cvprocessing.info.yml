@@ -1,0 +1,6 @@
+name: CV Word Processing Module
+description: Processes data from CV Word Checker.
+package: Custom
+
+type: module
+core: 8.x

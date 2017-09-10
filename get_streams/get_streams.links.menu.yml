@@ -1,0 +1,35 @@
+get_streams.admin:
+  title: Get Streams good and bad 
+  description: 'Shows all the good and bad words.'
+  route_name: get_streams.content
+  base_route: get_streams.content
+
+get_streams_good.admin:
+  title: Get Streams good
+  description: 'Shows all the good words.'
+  route_name: get_streams.content_good
+  base_route: get_streams.content_good
+
+get_streams_bad.admin:
+  title: Get Streams bad 
+  description: 'Shows all the bad words.'
+  route_name: get_streams.content_bad
+  base_route: get_streams.content_bad
+
+get_streams_bad_phrases.admin:
+  title: Get Streams bad phrases
+  description: 'Shows all the bad words.'
+  route_name: get_streams.content_bad_phrases
+  base_route: get_streams.content_bad_phrases
+
+get_streams_pronouns.admin:
+  title: Get Streams pronouns
+  description: 'Shows all the bad words.'
+  route_name: get_streams.content_pronouns
+  base_route: get_streams.content_pronouns
+
+
+
+
+
+

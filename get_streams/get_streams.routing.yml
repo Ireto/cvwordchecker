@@ -1,0 +1,41 @@
+get_streams.content:
+  path: '/getstreams'
+  defaults:
+    _controller: '\Drupal\get_streams\Controller\GetStreamsController::streams'
+    _title: 'Show content'
+  requirements:
+    _permission: 'access content'
+
+
+get_streams.content_good:
+  path: '/getstreams/good'
+  defaults:
+    _controller: '\Drupal\get_streams\Controller\GetStreamsController::streams_good'
+    _title: 'Show good streams'
+  requirements:
+    _permission: 'access content'
+
+
+get_streams.content_bad:
+  path: '/getstreams/bad'
+  defaults:
+    _controller: '\Drupal\get_streams\Controller\GetStreamsController::streams_bad'
+    _title: 'Show bad streams'
+  requirements:
+    _permission: 'access content'
+
+get_streams.content_bad_phrases:
+  path: '/getstreams/bad_phrases'
+  defaults:
+    _controller: '\Drupal\get_streams\Controller\GetStreamsController::streams_bad_phrases'
+    _title: 'Show bad phrases streams'
+  requirements:
+    _permission: 'access content'
+
+get_streams.content_pronouns:
+  path: '/getstreams/pronouns'
+  defaults:
+    _controller: '\Drupal\get_streams\Controller\GetStreamsController::streams_pronouns'
+    _title: 'Show pronouns streams'
+  requirements:
+    _permission: 'access content'

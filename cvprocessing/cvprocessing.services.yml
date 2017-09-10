@@ -1,0 +1,34 @@
+services:
+    cvprocessing.goodword:
+        class: Drupal\cvprocessing\CVProcesses\SpotGood\SpotGoodWords
+        arguments:  ['@cvprocessing.dotprocess' , '@get_streams.stream_generator']
+
+
+    cvprocessing.dotprocess:
+        class: Drupal\cvprocessing\CVProcesses\DotsToDotWithSpaces\DotProcess
+
+
+    cvprocessing.spotword:
+        class: Drupal\cvprocessing\CVProcesses\Spot\Spot
+
+    cvprocessing.tidyup:
+        class: Drupal\cvprocessing\CVProcesses\TidyUp\TidyUp
+
+    cvprocessing.repeatwordcounter:
+        class: Drupal\cvprocessing\CVProcesses\RepeatWordCounter\RepeatWordCounter
+
+    cvprocessing.displaydata:
+        class: Drupal\cvprocessing\CVProcesses\DisplayData\DisplayData
+
+    cvprocessing.allprocessing:
+        class: Drupal\cvprocessing\CVProcesses\AllCVProcessing\AllCVProcessing
+        arguments:  ['@cvprocessing.goodword', '@cvprocessing.spotword', '@get_streams.stream_generator', '@cvprocessing.passivevoice' ]
+
+    cvprocessing.passivevoice:
+        class: Drupal\cvprocessing\CVProcesses\PassiveVoice\PassiveVoice
+        arguments:  ['@get_streams.stream_generator']
+
+
+
+
+

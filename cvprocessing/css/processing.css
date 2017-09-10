@@ -1,0 +1,48 @@
+.passivevoice{
+
+
+ font-weight: bold;
+ font-size: 0.75em;
+ color:red;
+
+
+
+}
+
+.goodword{
+
+ font-size: 1.5em;
+ font-weight: bold;
+ color:green;
+
+}
+
+.badword{
+
+ font-size: 1.5em;
+ font-weight: bold;
+ color:red;
+
+}
+
+.goodwordstodisplay{
+
+ background-color: #e2fee2 ;
+ padding: 0.5em;
+ border-radius: 1em;
+ margin-bottom: 1em;
+ border: 1px solid green;
+
+
+}
+
+.badwordstodisplay{
+
+ background-color: #fc9c9c;
+ padding: 0.5em;
+ border-radius: 1em;
+ margin-bottom: 1em;
+ border: 1px solid green;
+
+
+}

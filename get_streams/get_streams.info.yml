@@ -1,0 +1,6 @@
+name: Gets Streams Module
+description: Gets the bad word, good word and bad phrases streams
+package: Custom
+
+type: module
+core: 8.x

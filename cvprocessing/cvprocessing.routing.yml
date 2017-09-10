@@ -1,0 +1,7 @@
+cvprocessing.processing:
+  path: '/cvprocess/{cvprocessing}'
+  defaults:
+    _controller: '\Drupal\cvprocessing\Controller\CVWordProcessingController::processing'
+    _title: 'CV  World Processing'
+  requirements:
+    _permission: 'access content'
